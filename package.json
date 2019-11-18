@@ -1,0 +1,32 @@
+{
+	"name": "2loancalculator",
+	"version": "1.0.0",
+	"description": "",
+	"main": "loanCalculator.js",
+	"devDependencies": {
+		"@types/node": "^12.12.8",
+		"eslint": "^6.6.0",
+		"express": "^4.17.1",
+		"ts-loader": "^6.2.1",
+		"typescript": "^3.7.2",
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.10"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Precigus/LoanCalculator.git"
+	},
+	"keywords": [
+		"Loan",
+		"calculator"
+	],
+	"author": "Precigus",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Precigus/LoanCalculator/issues"
+	},
+	"homepage": "https://github.com/Precigus/LoanCalculator#readme"
+}

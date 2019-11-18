@@ -1,0 +1,7 @@
+{
+	"compilerOptions": {
+		"outDir": "./build/",
+		"watch": true
+	},
+	"exclude": ["node_modules"]
+}
