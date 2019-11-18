@@ -1,7 +1,12 @@
 const path = require('path');
 
 module.exports = {
-	entry: './src/loanCalculator.ts',
+	entry: {
+		calculator: path.join(__dirname + '/src/loanCalculator.ts'),
+		quick: path.join(__dirname + '/src/quickLoan.ts'),
+		mortgage: path.join(__dirname + '/src/mortgageLoan.ts'),
+		personal: path.join(__dirname + '/src/personalLoan.ts')
+	},
 	mode: 'development',
 	devtool: 'source-map',
 	module: {
@@ -17,7 +22,7 @@ module.exports = {
 		extensions: ['.tsx', '.ts', '.js']
 	},
 	output: {
-		filename: 'bundle.js',
+		filename: '[name].js',
 		path: path.resolve(__dirname, 'dist')
 	}
 };
