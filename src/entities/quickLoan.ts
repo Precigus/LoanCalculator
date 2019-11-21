@@ -7,6 +7,6 @@ export default class QuickLoan extends Loan {
 	}
 
 	isTermValid(): boolean {
-		return this.term < 24;
+		return this.term * 12 <= 24;
 	}
 }

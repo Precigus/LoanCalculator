@@ -1,6 +1,6 @@
 const path = require('path');
 
-export function changeLocation(page: string): void {
+function changeLocation(page: string): void {
 	switch (page) {
 		case 'quick':
 			window.location.href = 'quickLoan.html';
@@ -16,7 +16,7 @@ export function changeLocation(page: string): void {
 			break;
 	}
 }
-export function addEventListeners(): void {
+function addEventListeners(): void {
 	let quickLoanButton = document.getElementById('quickLoan');
 	let mortgageLoanButton = document.getElementById('mortgageLoan');
 	let personalLoanButton = document.getElementById('personalLoan');

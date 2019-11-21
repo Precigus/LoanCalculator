@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mortgage Loan</title>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <input type="number" class="amount" name="quickLoan[amount]" placeholder="Amount requested" autofocus />
+    </div>
+    <div>
+      <input type="number" class="term" name="quickLoan[term]" placeholder="Term (Max 2 years)" />
+    </div>
+    <div>
+      <input type="number" class="term" name="quickLoan[term]" placeholder="Term (Max 2 years)" />
+    </div>
+  
+    <button class="calcButton">Calculate</button>
+  
+    <div>
+      <input type="number" class="monthlyPayment" readonly><span>/month</span>
+    </div>
+  </div>
+  <script src="../dist/quick.js"></script>
+</body>
+</html>

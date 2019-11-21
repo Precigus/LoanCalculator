@@ -7,17 +7,19 @@
   <title>Quick Loan</title>
 </head>
 <body>
-  <div>
-    <input type="number" id="amount" name="quickLoan[amount]" placeholder="Amount requested" autofocus />
-  </div>
-  <div>
-    <input type="number" id="term" name="quickLoan[term]" placeholder="Term (Max 2 years)" />
-  </div>
-
-  <button></button>
-
-  <div>
-    <input type="number" id="quickLoanMonthly" readonly><span>/month</span>
+  <div class="container">
+    <div>
+      <input type="number" class="amount" name="quickLoan[amount]" placeholder="Amount requested" autofocus />
+    </div>
+    <div>
+      <input type="number" class="term" name="quickLoan[term]" placeholder="Term (Max 2 years)" />
+    </div>
+  
+    <button class="calcButton">Calculate</button>
+  
+    <div>
+      <input type="number" class="monthlyPayment" readonly><span>/month</span>
+    </div>
   </div>
   <script src="../dist/quick.js"></script>
 </body>

@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
-		"outDir": "./build/",
-		"watch": true
+		"outDir": "./dist/"
+		// "watch": true
 	},
 	"exclude": ["node_modules"]
 }

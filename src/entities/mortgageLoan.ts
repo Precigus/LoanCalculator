@@ -21,7 +21,7 @@ export default class MortgageLoan extends Loan {
 	}
 
 	isTermValid() {
-		return this.term < 360;
+		return this.term * 12 <= 360;
 	}
 
 	calculatePayments(): number {
