@@ -9,13 +9,19 @@
 <body>
   <div class="container">
     <div>
-      <input type="number" class="amount" name="quickLoan[amount]" placeholder="Amount requested" autofocus />
+      <input type="number" class="amount" name="mortgageLoan[amount]" placeholder="Amount requested" autofocus />
     </div>
     <div>
-      <input type="number" class="term" name="quickLoan[term]" placeholder="Term (Max 2 years)" />
+      <input type="number" class="term" name="mortgageLoan[term]" placeholder="Term (Max 30 years)" />
     </div>
     <div>
-      <input type="number" class="term" name="quickLoan[term]" placeholder="Term (Max 2 years)" />
+      <input type="number" class="income" name="mortgageLoan[income]" placeholder="Family income per month" />
+    </div>
+    <div>
+      <input type="number" class="childCount" name="mortgageLoan[childCount]" placeholder="Number of children" />
+    </div>
+    <div>
+      <input type="number" class="parentCount" name="mortgageLoan[parentCount]" placeholder="Number of parents" />
     </div>
   
     <button class="calcButton">Calculate</button>
@@ -24,6 +30,6 @@
       <input type="number" class="monthlyPayment" readonly><span>/month</span>
     </div>
   </div>
-  <script src="../dist/quick.js"></script>
+  <script src="../dist/mortgage.js"></script>
 </body>
 </html>

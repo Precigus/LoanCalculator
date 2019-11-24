@@ -28,7 +28,7 @@ export default class MortgageLoan extends Loan {
 		const salaryPercent = 21;
 
 		let monthlyPayment =
-			(this.amount + (1 + this.interest / 100)) / this.term +
+			(this.amount * (1 + this.interest / 100)) / this.term -
 			this.income / (this.childCount + this.parentCount);
 
 		return monthlyPayment;
